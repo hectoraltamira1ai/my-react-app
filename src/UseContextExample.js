@@ -23,7 +23,7 @@ function UseContextExample() {
       <ThemeDisplay />
       <br></br>
       {/* Add the image below the buttons */}
-      <img src={image3} alt="Description of image" className="styled-image" />
+      <img src={image3} alt="Description of image" className="styled-image image-container" />
     </ThemeContext.Provider>
   );
 }
@@ -32,13 +32,6 @@ function UseContextExample() {
 function ThemeDisplay() {
   const { theme } = useContext(ThemeContext); // Accessing the context value
   return <p>The selected theme is: {theme}</p>;
-}
-function ImageContainer() {
-  return (
-    <div className="image-container">
-      <img src={image3} alt="Description of image" className="styled-image" />
-    </div>
-  );
 }
 
 export default UseContextExample;

@@ -24,14 +24,7 @@ function UseEffectExample() {
       <button className="glow-button input-button" onClick={handleReturn}>Return to Main Page</button> {/* Button to return */}
       <br></br>
       {/* Add the image below the buttons */}
-      <img src={image2} alt="Description of image" className="styled-image" />
-    </div>
-  );
-}
-function ImageContainer() {
-  return (
-    <div className="image-container">
-      <img src={image2} alt="Description of image" className="styled-image" />
+      <img src={image2} alt="Description of image" className="styled-image image-container" />
     </div>
   );
 }

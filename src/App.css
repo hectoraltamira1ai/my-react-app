@@ -103,6 +103,6 @@ body {
 }
 
 .styled-image {
-  max-width: 100%; /* Responsive width */
+  max-width: auto; /* Responsive width */
   height: auto; /* Maintain aspect ratio */
 }
