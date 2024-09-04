@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import image5 from './Assets/5.png';
+import image5 from './Assets/useRef.png';
 
 function UseRefExample() {
   const inputRef = useRef(null); // Creating a ref for the input element
@@ -24,6 +24,13 @@ function UseRefExample() {
       <button className="glow-button input-button" onClick={handleReturn}>Return to Main Page</button> {/* Button to return */}
       <br></br>
       {/* Add the image below the buttons */}
+      <img src={image5} alt="Description of image" className="styled-image" />
+    </div>
+  );
+}
+function ImageContainer() {
+  return (
+    <div className="image-container">
       <img src={image5} alt="Description of image" className="styled-image" />
     </div>
   );

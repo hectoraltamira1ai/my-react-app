@@ -1,6 +1,6 @@
 import React, { useReducer } from 'react';
 import { useNavigate } from 'react-router-dom';
-import image4 from './Assets/4.png';
+import image4 from './Assets/useReducer.png';
 
 // Define the initial state
 const initialState = { count: 0 };
@@ -34,6 +34,13 @@ function UseReducerExample() {
       <button className="glow-button input-button" onClick={handleReturn}>Return to Main Page</button> {/* Button to return */}
       <br></br>
       {/* Add the image below the buttons */}
+      <img src={image4} alt="Description of image" className="styled-image" />
+    </div>
+  );
+}
+function ImageContainer() {
+  return (
+    <div className="image-container">
       <img src={image4} alt="Description of image" className="styled-image" />
     </div>
   );

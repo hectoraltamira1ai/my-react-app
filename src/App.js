@@ -15,7 +15,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <h1>React Hooks Examples</h1>
+        <h1 className="title">React Hooks Examples</h1>
         <div className="button-container">
           {/* Each button links to a different route */}
           <Link to="/useState" className="button">useState</Link>
@@ -37,7 +37,7 @@ function App() {
           <Route path="/useMemo" element={<UseMemoExample />} />
           <Route path="/useCallback" element={<UseCallbackExample />} />
           {/* Optional: Add a default route for the home page */}
-          <Route path="/" element={<h2>Welcome! Click a hook example above.</h2>} />
+          <Route path="/" element={<h2 className="sub__title">Welcome! Click a hook example above.</h2>} />
         </Routes>
       </div>
     </Router>

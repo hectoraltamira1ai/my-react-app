@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import image3 from './Assets/3.png';
+import image3 from './Assets/useContext.png';
 
 // Create a Context for the theme
 const ThemeContext = createContext();
@@ -32,6 +32,13 @@ function UseContextExample() {
 function ThemeDisplay() {
   const { theme } = useContext(ThemeContext); // Accessing the context value
   return <p>The selected theme is: {theme}</p>;
+}
+function ImageContainer() {
+  return (
+    <div className="image-container">
+      <img src={image3} alt="Description of image" className="styled-image" />
+    </div>
+  );
 }
 
 export default UseContextExample;

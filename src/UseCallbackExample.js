@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import image7 from './Assets/7.png';
+import image7 from './Assets/useCallback.png';
 
 // Child component that uses a callback prop
 const Counter = React.memo(({ increment }) => {
@@ -29,6 +29,13 @@ function UseCallbackExample() {
       <button className="glow-button input-button" onClick={handleReturn}>Return to Main Page</button> {/* Button to return */}
       <br></br>
       {/* Add the image below the buttons */}
+      <img src={image7} alt="Description of image" className="styled-image" />
+    </div>
+  );
+}
+function ImageContainer() {
+  return (
+    <div className="image-container">
       <img src={image7} alt="Description of image" className="styled-image" />
     </div>
   );

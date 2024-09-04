@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import image6 from './Assets/6.png';
+import image6 from './Assets/useMemo.png';
 
 function UseMemoExample() {
   const [count, setCount] = useState(0); // State to trigger re-renders
@@ -31,6 +31,13 @@ function UseMemoExample() {
       <button className="glow-button input-button" onClick={handleReturn}>Return to Main Page</button> {/* Button to return */}
       <br></br>
       {/* Add the image below the buttons */}
+      <img src={image6} alt="Description of image" className="styled-image" />
+    </div>
+  );
+}
+function ImageContainer() {
+  return (
+    <div className="image-container">
       <img src={image6} alt="Description of image" className="styled-image" />
     </div>
   );

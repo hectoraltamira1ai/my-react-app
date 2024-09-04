@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import image1 from './Assets/1.png';
+import image1 from './Assets/useState.png';
 
 function UseStateExample() {
   const [count, setCount] = useState(0); // Initializes count to 0
@@ -23,5 +23,13 @@ function UseStateExample() {
     </div>
   );
 }
+function ImageContainer() {
+  return (
+    <div className="image-container">
+      <img src={image1} alt="Description of image" className="styled-image" />
+    </div>
+  );
+}
 
 export default UseStateExample;
+
